@@ -537,21 +537,6 @@ button:hover {
   .container {
     padding-inline: 20px;
   }
-  /* .hero-section {
-    padding-bottom: 48px;
-  }
-  .collabs {
-    padding-block: 48px;
-  }
-  .team-section header {
-    padding-block: 48px;
-  }
-  .team-flex-box {
-    padding-block: 48px;
-  }
-  .desktop-section {
-    padding-block: 48px;
-  } */
   .tools-section {
     gap: 40px;
   }
@@ -631,20 +616,20 @@ button:hover {
   .nav-cell {
     position: relative;
   }
-  #responsive-side-bar {
-    position: absolute;
+   #responsive-side-bar {
+    position: fixed;
     background-color: white;
     display: block;
-    width: 40%;
+    height: 100vh;
+    width: 80%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translateX(-500px);
+    transition: transform 0.7s ease;
+    top: 0;
     z-index: 99;
-    padding: 10px 20px;
-    border-radius: 8px;
-    right: 2%;
-    top: 14%;
   }
   #responsive-side-bar div {
     font-size: 1.6rem;
@@ -824,3 +809,4 @@ button:hover {
     width: 50%;
   }
 }
+

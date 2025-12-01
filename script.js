@@ -3,6 +3,7 @@ const openMenu = document.getElementById("open-menu");
 const closeMenu = document.getElementById("close-menu");
 
 openMenu.addEventListener("click", () => {
+    sideResponsiveBar.style.transform = " translateX(0)";
   openMenu.style.display = "none";
   closeMenu.style.display = "block";
   document.body.classList.toggle("no-scroll");
@@ -16,7 +17,9 @@ window.addEventListener("resize", () => {
 });
 
 closeMenu.addEventListener("click", () => {
+    sideResponsiveBar.style.transform = " translateX(-500px)";
   closeMenu.style.display = "none";
   openMenu.style.display = "block";
   document.body.classList.remove("no-scroll");
 });
+
